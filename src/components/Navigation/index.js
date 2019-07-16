@@ -20,8 +20,10 @@ const Navigation = () => (
 
 
 const NavigationAuth = ({ authUser }) => (
-	
-	
+  <div>
+    <h3>
+      You can find me in Navigation/index.js/NavigationAuth
+    </h3>
   <ul>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
@@ -41,9 +43,14 @@ const NavigationAuth = ({ authUser }) => (
       <SignOutButton />
     </li>
   </ul>
+  </div>
 );
 
 const NavigationNonAuth = () => (
+  <div>
+  <h3>
+  You can find me in Navigation/index.js/NavigationNonAuth
+</h3>
   <ul>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
@@ -52,6 +59,7 @@ const NavigationNonAuth = () => (
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>
     </li>
   </ul>
+  </div>
 );
 
 export default Navigation;
