@@ -18,7 +18,10 @@ const Navigation = () => (
   </AuthUserContext.Consumer>
 );
 
+
 const NavigationAuth = ({ authUser }) => (
+	
+	
   <ul>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
