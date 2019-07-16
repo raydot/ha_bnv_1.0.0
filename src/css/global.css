@@ -62,7 +62,7 @@ border-spacing: 0;
 
 body {
 	font-family: sans-serif;
-	background-color: #a5a5a5;
+/* 	background-color: #a5a5a5; */
 }
 
 nav {
@@ -564,12 +564,14 @@ a.white {
     top: 18px;
 }
 
+/*
 .synopsis p, .synopsis p:last-child {
 	font-size: 1.6em;
 	font-weight: 200;
 	color: #6b6b6b;
 	margin-bottom: 15px;
 }
+*/
 
 p.moneyValue {
 	font-size: 1.6em;
@@ -744,6 +746,7 @@ list-type-ulli {
   -ms-border-radius: 4px;
 /*   padding: 50px 85px;  */
   max-width: 600px;
+  margin: 0 auto;
   }
 
 .centerForm {
@@ -797,11 +800,11 @@ form-setup select {
 }
 
 .form-group label {
-	margin: 0 1%;
-	margin-bottom: 0;
+	margin: 5px 1%;
 	font-family: "Assistant", sans-serif;
 	font-size: .9em;
 	font-weight: 700;
+	display: block;
 }
 
 .form-submit {
@@ -915,7 +918,9 @@ input[type=checkbox]:not(old):checked + label > span:before {
   font-weight: 700;
 /*   color: #fff; */
   font-family: 'Assistant', sans-serif;
+  margin: 0 1%;
   margin-bottom: 10px;
+  
 }
 
 .flat-button-small {

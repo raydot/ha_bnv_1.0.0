@@ -7,7 +7,7 @@ const LandingPage = () => (
     <h1>Landing</h1>
     <p>
       This is root/index.js<br />
-      The Landing Page is open to everyone, even though the user isn't
+      The Landing Page is open to everyone, even though the user isnt
       signed in.
     </p>
   </Fragment>

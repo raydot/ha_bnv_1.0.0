@@ -14,23 +14,37 @@ import { PasswordForgetLink } from '../components/PasswordForget';
 const SignInPage = () => (
   <Fragment>
 	  
-	  <div className="smallHeader">
-		  	<div className="titleInfo">
-		  		<h1 className="pageTitle">Sign In</h1>
-          	</div>
-          	<div className="hero-overlay"></div>
-          	<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
-		  	</div>
+		<div className="smallHeader">
+			<div className="titleInfo">
+				<h1 className="pageTitle">Sign In</h1>
+			</div>
+			<div className="hero-overlay"></div>
+			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
+		</div>
 	  
+	  <div className="content">
+		  
+		  <div className="mainContent">
+  	          <div className="content synopsis">
+  	            <div className="grid-container">
+  	            	<div className="grid-100">
+	  	            	<div className="signup-content">
+		  					<SignInForm />
+		  					<SignInGoogle />
+		  					<SignInFacebook />
+		  					<SignInTwitter />
+		  					<PasswordForgetLink />
+		  					<SignUpLink />
+	  					</div>
+  	            	</div>
+  	            </div>
+  	          </div>
+  	       </div>
+		  
+	  </div>
 	  
-	  
-    <h1>SignIn</h1>
-    <SignInForm />
-    <SignInGoogle />
-    <SignInFacebook />
-    <SignInTwitter />
-    <PasswordForgetLink />
-    <SignUpLink />
+
+    
   </Fragment>
 );
 
