@@ -1,8 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
 import Navigation from './Navigation';
+import SEO from '../seo/seo.js';
+
 import getFirebase, { FirebaseContext } from './Firebase';
 import withAuthentication from './Session/withAuthentication';
+import CSS from "../css/global.css"
 
 class Layout extends Component {
   state = {
