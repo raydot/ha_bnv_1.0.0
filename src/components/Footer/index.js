@@ -4,9 +4,37 @@ import { Link } from 'gatsby';
 
 const Footer = () => (
   <div>
-    This here is the footer!<br />
-    You can find me in <blink>Footer/index.js</blink><br />
-    <Link to='http://www.google.com'>Generic link</Link>
+    <footer className="site-footer">
+			<div className="site-footer--container">
+			
+			<div class="grid-container">
+				<div class="grid-33">
+				<h3>Our Mission</h3>
+				<p>To empower wine explorers to go out and seek out that next bottle of amazing wine.</p>
+				
+				</div>
+				<div class="grid-33">
+				<h3>Connect on Social Media</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/beyondnapavalley/"><span>Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/beyondnapavalley/"><span>Instagram</span></a></li>
+						<li><a href="https://twitter.com/beyond_napa"><span>Twitter</span></a></li>
+					</ul>
+				
+				</div>
+				<div class="grid-33">
+					<h3>Other Resources</h3>
+					<ul>
+						<li><Link to="/">Support</Link></li>
+						<li><Link to="https://www.facebook.com/beyondnapavalley/"><span>Privacy Policy</span></Link></li>
+						<li><Link to="https://www.facebook.com/beyondnapavalley/"><span>Subscribe to our Newsletter</span></Link></li>
+					</ul>
+					
+				</div>
+			</div>
+				<p className="center">Copyright &copy;{(new Date().getFullYear())} Beyond Napa Valley | Please drink responsibly</p>
+			</div>
+		</footer>
   </div>
 );
 

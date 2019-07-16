@@ -21,44 +21,54 @@ const Navigation = () => (
 
 const NavigationAuth = ({ authUser }) => (
   <div>
-    <h3>
-      You can find me in Navigation/index.js/NavigationAuth
-    </h3>
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    {!!authUser.roles[ROLES.ADMIN] && (
-      <li>
-        <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
-    )}
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+	  <nav>              
+		// 	<div className='clear'></div>
+		<div className='columns'>
+			<div className='leftCol'>
+				<Link to='/' className='logo'><span>Beyond Napa Valley</span></Link>
+			</div>
+			
+			<div className='rightCol'>
+				<ul className='header'>
+					<li><Link to='/explore'>Explore</Link></li>
+					<li><Link to='/membership'>Membership Benefits</Link></li>
+					<li><Link to='/join'>Join</Link></li>
+					<li><Link to={ROUTES.LANDING}>Landing</Link></li>
+					<li><Link to={ROUTES.HOME}>Home</Link></li>
+					<li><Link to={ROUTES.ACCOUNT}>Account</Link></li>
+						{!!authUser.roles[ROLES.ADMIN] && (
+							<li>
+								<Link to={ROUTES.ADMIN}>Admin</Link>
+      						</li>
+					    )}
+					    
+					<li><SignOutButton /></li>
+				</ul>
+			</div>
+		</div>
+		</nav>
   </div>
 );
 
 const NavigationNonAuth = () => (
   <div>
-  <h3>
-  You can find me in Navigation/index.js/NavigationNonAuth
-</h3>
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+	<nav>              
+		<div className='columns'>
+			<div className='leftCol'>
+				<Link to='/' className='logo'><span>Beyond Napa Valley</span></Link>
+			</div>
+			
+			<div className='rightCol'>
+				<ul className='header'>
+					<li><Link to='/explore'>Explore</Link></li>
+					<li><Link to='/membership'>Membership Benefits</Link></li>
+					<li><Link to='/join'>Join</Link></li>
+					<li><Link to={ROUTES.LANDING}>Landing</Link></li>
+					<li><Link to={ROUTES.SIGN_IN}>Sign In</Link></li>
+				</ul>
+			</div>
+		</div>
+	</nav> 
   </div>
 );
 
