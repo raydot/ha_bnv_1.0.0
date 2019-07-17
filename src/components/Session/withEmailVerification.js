@@ -37,7 +37,7 @@ const withEmailVerification = Component => {
                     Refresh this page once you confirmed your E-Mail.
                   </p>
                 ) : (
-                  <p>
+                  <p><br /><br /><br /><br />
                     Verify your E-Mail: Check you E-Mails (Spam folder
                     included) for a confirmation E-Mail or send
                     another confirmation E-Mail.
