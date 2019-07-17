@@ -1,9 +1,17 @@
 import React, { Fragment } from 'react';
+import { Helmet } from "react-helmet";
 import foleyWinery from '../img/foley-winery.jpg';
 import Layout from '../components/layout';
 
+
+  
 const LandingPage = () => (
   <Fragment>
+	   <Helmet>
+        <title>Beyond Napa Valley</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
+      
 	  <div className="smallHeader">
 			<div className="titleInfo">
 				<h1 className="pageTitle">Become a Wine Explorer</h1>
@@ -19,6 +27,8 @@ const LandingPage = () => (
     </p>
   </Fragment>
 );
+
+
 
 export default () => (
   <Layout>
