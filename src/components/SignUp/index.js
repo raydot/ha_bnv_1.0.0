@@ -92,45 +92,41 @@ class SignUpFormBase extends Component {
       username === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className="form-group" onSubmit={this.onSubmit}>
+      	<label>Username</label>
         <input
           name="username"
           value={username}
           onChange={this.onChange}
           type="text"
-          placeholder="Full Name"
+          className="form-input"
         />
+        <label>Email Address</label>
         <input
           name="email"
           value={email}
           onChange={this.onChange}
           type="text"
-          placeholder="Email Address"
+          className="form-input"
         />
+        <label>Password</label>
         <input
           name="passwordOne"
           value={passwordOne}
           onChange={this.onChange}
           type="password"
-          placeholder="Password"
+          className="form-input"
         />
+        <label>Confirm Password</label>
         <input
           name="passwordTwo"
           value={passwordTwo}
           onChange={this.onChange}
           type="password"
-          placeholder="Confirm Password"
+          className="form-input"
         />
-        <label>
-          Admin:
-          <input
-            name="isAdmin"
-            type="checkbox"
-            checked={isAdmin}
-            onChange={this.onChangeCheckbox}
-          />
-        </label>
-        <button disabled={isInvalid} type="submit">
+        
+        <button className="button" disabled={isInvalid} type="submit">
           Sign Up
         </button>
 
