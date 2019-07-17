@@ -33,10 +33,16 @@ class Firebase {
   // *** Auth API ***
 
   doCreateUserWithEmailAndPassword = (email, password) =>
-    this.auth.createUserWithEmailAndPassword(email, password);
+    this.auth.createUserWithEmailAndPassword(email, password)
+
 
   doSignInWithEmailAndPassword = (email, password) =>
-    this.auth.signInWithEmailAndPassword(email, password);
+    this.auth.signInWithEmailAndPassword(email, password).catch(function(error) {
+      // HANDLE AUTH ERRORS HERE
+      var errorCode = error.code
+      var errorMessage = error.message
+      console.log("errorCode:", errorCode, "errorMessage", errorMessage)
+    })
 
   doSignInWithGoogle = () =>
     this.auth.signInWithPopup(this.googleProvider);
@@ -69,6 +75,9 @@ class Firebase {
           .then(snapshot => {
             const dbUser = snapshot.val();
 
+            // GETTING ERROR:
+            //Cannot read property 'roles' of null
+
             // default empty roles
             if (!dbUser.roles) {
               dbUser.roles = {};
@@ -84,7 +93,10 @@ class Firebase {
             };
 
             next(authUser);
-          });
+          })
+          .catch(function(error) {
+            console.log("error:", error)
+          })
       } else {
         fallback();
       }
