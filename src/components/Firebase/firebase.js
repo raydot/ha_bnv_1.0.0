@@ -34,6 +34,14 @@ class Firebase {
 
   doCreateUserWithEmailAndPassword = (email, password) =>
     this.auth.createUserWithEmailAndPassword(email, password)
+      .catch(function(error) {
+        var errorCode = error.code
+        var errorMessage = error.message
+        // THIS NEEDS TO BE WIRED TO SUPPORT STRONG PASSWORDS ONLY
+        if (errorCode) {
+          console.log("errorCode:", errorCode, "errorMessage", errorMessage)
+        }
+      })
 
 
   doSignInWithEmailAndPassword = (email, password) =>
@@ -60,7 +68,9 @@ class Firebase {
   doSendEmailVerification = () =>
     this.auth.currentUser.sendEmailVerification({
       url: process.env.GATSBY_CONFIRMATION_EMAIL_REDIRECT,
-    });
+    }).catch(function(error) {
+      console.log("SENDUSEREMAILERROR:",error)
+    })
 
   doPasswordUpdate = password =>
     this.auth.currentUser.updatePassword(password);
