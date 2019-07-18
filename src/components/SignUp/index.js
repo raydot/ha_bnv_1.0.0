@@ -142,27 +142,6 @@ class SignUpFormBase extends Component {
           type="password"
           className="form-input"
         />
-        <label>
-<<<<<<< HEAD
-        Admin:
-          <input
-            name="isAdmin"
-            type="checkbox"
-            checked={isAdmin}
-            onChange={this.onChangeCheckbox}
-          />
-        </label>
-
-=======
-          Admin:
-          <input
-            name="isAdmin"
-            type="checkbox"
-            checked={isAdmin}
-            onChange={this.onChangeCheckbox}
-          />
-        </label>
->>>>>>> 7f369dbfb96e2c09ba77701445a5e7204d6545c5
         <button className="button" disabled={isInvalid} type="submit">
           Sign Up
         </button>
