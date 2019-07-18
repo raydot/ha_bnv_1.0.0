@@ -24,6 +24,23 @@ const ERROR_MSG_ACCOUNT_EXISTS = `
   on your personal account page.
 `;
 
+var actionCodeSettings = {
+  // URL you want to redirect back to. The domain (www.example.com) for this
+  // URL must be whitelisted in the Firebase Console.
+  url: 'https://localhost:5000/congrats.js',
+  // This must be true.
+  handleCodeInApp: true,
+  iOS: {
+    bundleId: 'com.example.ios'
+  },
+  android: {
+    packageName: 'com.example.android',
+    installApp: true,
+    minimumVersion: '12'
+  },
+  dynamicLinkDomain: 'example.page.link'
+};
+
 class SignUpFormBase extends Component {
   constructor(props) {
     super(props);
@@ -125,7 +142,16 @@ class SignUpFormBase extends Component {
           type="password"
           className="form-input"
         />
-        
+        <label>
+        Admin:
+          <input
+            name="isAdmin"
+            type="checkbox"
+            checked={isAdmin}
+            onChange={this.onChangeCheckbox}
+          />
+        </label>
+
         <button className="button" disabled={isInvalid} type="submit">
           Sign Up
         </button>
