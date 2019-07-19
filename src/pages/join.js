@@ -55,9 +55,7 @@ const Join = () => (
 		</GridContainer>
           
 	  </div>
-	  
 
-    
   </Fragment>
 );
 
