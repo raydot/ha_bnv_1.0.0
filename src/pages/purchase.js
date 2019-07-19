@@ -3,9 +3,11 @@ import React, { Fragment } from 'react';
 import { Grid, GridContainer} from 'unsemantic'
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
+import PurchaseDetailsLeft from '../components/Purchase/PurchaseDetailsLeft'
+import PurchaseDetailsRight from '../components/Purchase/PurchaseDetailsRight'
 
  
-const Payment = () => (
+const Purchase = () => (
 	<Fragment>
 		<div className="smallHeader">
 		<div className="titleInfo">
@@ -16,12 +18,17 @@ const Payment = () => (
 		</div>
    
 	    <div className="content">          	
-	    	<GridContainer>
-	       		<Grid desktop="100">
-	            	<form>
-	            	AEIOUY
-	            	</form>		
-				</Grid>
+	    	<GridContainer> 		
+				<form>
+					AEIOUY
+					<Grid desktop="50">
+						<PurchaseDetailsLeft />
+					</Grid>
+
+					<Grid desktop="50">
+						<PurchaseDetailsRight />
+					</Grid>
+				</form>		
 		  	</GridContainer>
 	    </div>
 		
@@ -36,6 +43,6 @@ const Payment = () => (
  
 export default () => (
 	<Layout>
-	  <Payment />
+	  <Purchase />
 	</Layout>
   );
