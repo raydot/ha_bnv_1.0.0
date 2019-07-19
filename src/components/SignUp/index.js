@@ -18,10 +18,8 @@ const ERROR_CODE_ACCOUNT_EXISTS = 'auth/email-already-in-use';
 
 const ERROR_MSG_ACCOUNT_EXISTS = `
   An account with this E-Mail address already exists.
-  Try to login with this account instead. If you think the
-  account is already used from one of the social logins, try
-  to sign in with one of them. Afterward, associate your accounts
-  on your personal account page.
+  Try to login with this account instead. If you think this
+  account associate with one of your social logins, please try signing in with that. You can use the account page to associate social logins with your Beyond Napa Valley account.
 `;
 
 
@@ -129,7 +127,7 @@ class SignUpFormBase extends Component {
         <button className="button" disabled={isInvalid} type="submit">
           Sign Up
         </button>
-
+        By clicking the "Sign Up" button you agree to all Beyond Napa Valley Terms and Conditions.
         {error && <p>dot: {error.message}</p>}
       </form>
     );
