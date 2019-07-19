@@ -7,29 +7,23 @@ class PurchaseDetailsLeft extends Component {
 			firstName: '',
 			lastName: '',
 			email: '',
-			password: '',
-			password2: '',
-			sessionToken: null
+			addr1: '',
+			addr2: '',
+			addrCity: '',
+			addrState: '',
+			addrZip:'',
+			addrGiftCode: '',
+			addrPurcase: '',
 		}
 
-		// okta
-		// this.oktaAuth = new OktaAuth( {url: config.url })
-		// this.checkAuthentication = this.checkAuthentication.bind(this)
-		// this.checkAuthentication()
 
-	  this.handleSubmit = this.handleSubmit.bind(this);
 	  this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
 	  this.handleLastNameChange = this.handleLastNameChange.bind(this);
-	  this.handleEmailChange = this.handleEmailChange.bind(this);
-	  this.handlePasswordChange = this.handlePasswordChange.bind(this);
-	}
+		//this.handleSubmit = this.handleSubmit.bind(this);
+	  //this.handleEmailChange = this.handleEmailChange.bind(this);
+	  //this.handlePasswordChange = this.handlePasswordChange.bind(this);
 
-	// async checkAuthentication() {
-	//   const sessionToken = await this.props.auth.getIdToken();
-	//   if (sessionToken) {
-	//     this.setState({ sessionToken });
-	//   }
-	// }
+	} // constructor
 
 	componentDidUpdate() {
 	  this.checkAuthentication();
@@ -41,47 +35,44 @@ class PurchaseDetailsLeft extends Component {
 	handleLastNameChange(e) {
 	  this.setState({ lastName: e.target.value });
 	}
-	handleEmailChange(e) {
-	  this.setState({ email: e.target.value });
-	}
-	handlePasswordChange(e) {
-	  this.setState({ password: e.target.value });
-	}
-	handlePassword2Change(e) {
-	  this.setState({ password2: e.target.value });
-	}
 
-	handleSubmit(e) {
-	  e.preventDefault()
-	  fetch('/api/users', {
-	    method: 'POST',
-	    headers: {
-	      Accept: 'application/json',
-	      'Content-Type': 'application/json'
-	    },
-	    body: JSON.stringify(this.state)
-	  })
-	    .then(user => {
-	      this.oktaAuth
-	        .signIn({
-	          username: this.state.email,
-	          password: this.state.password
-	        })
-	        .then(res =>
-	          this.setState({
-	            sessionToken: res.sessionToken
-	          })
-	        )
-	    })
-	    .catch(err => console.log);
-	}
+	// handleEmailChange(e) {
+	//   this.setState({ email: e.target.value });
+	// }
+	// handlePasswordChange(e) {
+	//   this.setState({ password: e.target.value });
+	// }
+	// handlePassword2Change(e) {
+	//   this.setState({ password2: e.target.value });
+	// }
+
+	// handleSubmit(e) {
+	//   e.preventDefault()
+	//   fetch('/api/users', {
+	//     method: 'POST',
+	//     headers: {
+	//       Accept: 'application/json',
+	//       'Content-Type': 'application/json'
+	//     },
+	//     body: JSON.stringify(this.state)
+	//   })
+	//     .then(user => {
+	//       this.oktaAuth
+	//         .signIn({
+	//           username: this.state.email,
+	//           password: this.state.password
+	//         })
+	//         .then(res =>
+	//           this.setState({
+	//             sessionToken: res.sessionToken
+	//           })
+	//         )
+	//     })
+	//     .catch(err => console.log);
+	// }
 
 
 	render() {
-		// if (this.state.sessionToken) {
-		// 	this.props.auth.redirect({ sessionToken: this.state.sessionToken})
-		// 	return null
-		// }
 	    	return (
 			<div className="form-setup">
 				<h3>Personal Info</h3>
