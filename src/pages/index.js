@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
+
 import { Helmet } from "react-helmet";
 import { Grid, GridContainer} from "unsemantic"
 import foleyWinery from '../img/foley-winery.jpg';
@@ -19,7 +21,7 @@ const LandingPage = () => (
       	</Helmet>
       
 	  <div className="bigImageHeader">
-		  
+		  <div className="mainContent">
 		  	<div className="titleInfo">
 		  		<GridContainer>
 		  			<Grid desktop="50">
@@ -30,6 +32,7 @@ const LandingPage = () => (
 		  				
 		  			</Grid>
 		  		</GridContainer>
+		  		</div>
           	</div>
           	<div className="hero-overlay-graident"></div>
           	<img src={ exploreWineCounty } alt="Mustard Vines" className="wineryImage" />
@@ -71,7 +74,7 @@ const LandingPage = () => (
 	            		<p className="center pageTitle">Off your purchase the day you join the wine club</p>
 	            	</Grid>
 	            	<Grid>
-	            	<p className="center"><strong><a href="#membership" className="white button ">LEARN MORE</a></strong></p>
+	            	<p className="center"><strong><Link to="/membership" className="white button ">LEARN MORE</Link></strong></p>
 	            	</Grid>
 	    </GridContainer>
           	</div>
