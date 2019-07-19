@@ -1,11 +1,11 @@
 
+import React, { Fragment } from 'react';
 import { Grid, GridContainer} from 'unsemantic'
 import Layout from '../components/layout';
-import React, { Fragment } from 'react';
 import foleyWinery from '../img/foley-winery.jpg';
 
  
-const payment = () => {
+const Payment = () => (
 	<Fragment>
 		<div className="smallHeader">
 		<div className="titleInfo">
@@ -23,7 +23,6 @@ const payment = () => {
 	            	</form>		
 				</Grid>
 		  	</GridContainer>
-				
 	    </div>
 		
 		<Grid>
@@ -32,7 +31,7 @@ const payment = () => {
 	       	</GridContainer>
 		</Grid>  
 	</Fragment>
-}
+)
 
  
 export default () => (
