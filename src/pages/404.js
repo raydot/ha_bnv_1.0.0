@@ -10,7 +10,7 @@ const SignInPage = () => (
 	  
 		<div className="smallHeader">
 			<div className="titleInfo">
-				<h1 className="pageTitle">Explore</h1>
+				<h1 className="pageTitle">404</h1>
 			</div>
 			<div className="hero-overlay"></div>
 			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
@@ -18,7 +18,7 @@ const SignInPage = () => (
 	  
 	  <div className="content">
 		  
-		  <h1>404 -- 404 -- 404</h1>
+		  <h1>Sorry, the page you're looking for cannot be found.</h1>
 		  
 	  </div>
 	  
