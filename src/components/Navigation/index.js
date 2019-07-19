@@ -22,7 +22,7 @@ const Navigation = () => (
 const NavigationAuth = ({ authUser }) => (
   <div>
 	  <nav>              
-		// 	<div className='clear'></div>
+
 		<div className='columns'>
 			<div className='leftCol'>
 				<Link to='/' className='logo'><span>Beyond Napa Valley</span></Link>
@@ -33,8 +33,6 @@ const NavigationAuth = ({ authUser }) => (
 					<li><Link to='/explore'>Explore</Link></li>
 					<li><Link to='/membership'>Membership Benefits</Link></li>
 					<li><Link to='/join'>Join</Link></li>
-					<li><Link to={ROUTES.LANDING}>Landing</Link></li>
-					<li><Link to={ROUTES.HOME}>Home</Link></li>
 					<li><Link to={ROUTES.ACCOUNT}>Account</Link></li>
 						{!!authUser.roles[ROLES.ADMIN] && (
 							<li>
@@ -63,7 +61,7 @@ const NavigationNonAuth = () => (
 					<li><Link to='/explore'>Explore</Link></li>
 					<li><Link to='/membership'>Membership Benefits</Link></li>
 					<li><Link to='/join'>Join</Link></li>
-					<li><Link to={ROUTES.LANDING}>Landing</Link></li>
+
 					<li><Link to={ROUTES.SIGN_IN}>Sign In</Link></li>
 				</ul>
 			</div>
@@ -73,3 +71,4 @@ const NavigationNonAuth = () => (
 );
 
 export default Navigation;
+

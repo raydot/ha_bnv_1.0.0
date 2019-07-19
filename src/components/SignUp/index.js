@@ -124,10 +124,10 @@ class SignUpFormBase extends Component {
           type="password"
           className="form-input"
         />
-        <button className="button" disabled={isInvalid} type="submit">
+        <button className="btn btn-primary btn-block" disabled={isInvalid} type="submit">
           Sign Up
         </button>
-        By clicking the "Sign Up" button you agree to all Beyond Napa Valley Terms and Conditions.
+        <p className="form-input">By clicking the "Sign Up" button you agree to all Beyond Napa Valley Terms and Conditions.</p>
         {error && <p>dot: {error.message}</p>}
       </form>
     );
