@@ -13,10 +13,10 @@ import wineExplorerText from "../img/wine-explorer-text.png"
   
 const LandingPage = () => (
   <Fragment>
-	   <Helmet>
-        <title>Beyond Napa Valley</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+	   	<Helmet>
+        	<title>Beyond Napa Valley</title>
+			
+      	</Helmet>
       
 	  <div className="bigImageHeader">
 		  

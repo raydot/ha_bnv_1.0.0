@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { Grid, GridContainer} from "unsemantic"
+import { Grid, GridContainer} from "unsemantic";
+import { Helmet } from "react-helmet";
 
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
@@ -22,6 +23,11 @@ import barrawinery from "../img/barra-winery.jpg"
 
 const SignInPage = () => (
   <Fragment>
+	  
+  	   	<Helmet>
+        	<title>Explore the Wine Regions | Beyond Napa Valley</title>
+			<meta name="description" content="Explore the wineries that the Wine Explorer has to offer" />
+  		</Helmet>	
 	  
 		<div className="smallHeader">
 			<div className="titleInfo">

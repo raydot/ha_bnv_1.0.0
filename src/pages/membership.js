@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-
+import { Helmet } from "react-helmet";
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import MustardVines from '../img/mustard-vines.jpg';
@@ -7,7 +7,10 @@ import MustardVines from '../img/mustard-vines.jpg';
 
 const SignInPage = () => (
   <Fragment>
-	  
+	  <Helmet>
+        	<title>Membership Benefits | Beyond Napa Valley</title>
+			<meta name="description" content="Explore the benefits that the Wine Explorer Membership has to offer." />
+      	</Helmet>
 		<div className="smallHeader">
 			<div className="titleInfo">
 				<h1 className="pageTitle">Membership Benefits</h1>
