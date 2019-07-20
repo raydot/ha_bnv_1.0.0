@@ -4,6 +4,9 @@ import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
 
+import { compose } from 'recompose'
+import { withAuthorization, withEmailVerification, withAuthentication } from '../components/Session'
+
 
 
 const Dashboard = () => (
@@ -35,9 +38,6 @@ const Dashboard = () => (
 		          
 		            <div className="grid-container">
 			            <div className="grid-30">
-		            	
-		            		
-		            		
 		            		<img src={ digitalCard } alt="Digital Membership Card" className="imgFullCol" />
 		            		<p><strong>Show Digital Membership Card to Winery</strong></p>
 		            		<p>Only show image if yearly membership or if dates are current</p>
@@ -71,8 +71,19 @@ const Dashboard = () => (
   </Fragment>
 );
 
-export default () => (
-  <Layout>
-    <Dashboard />
-  </Layout>
-);
+
+const condition = authUser => !!authUser;
+
+export default compose(
+	withAuthorization(condition)
+)(Dashboard)
+
+// export default compose (
+// 	withEmailVerification,
+// 	withAuthorization(condition),
+// )(Dashboard)
+// export default () => (
+//   <Layout>
+//     <SignInPage />
+//   </Layout>
+// );

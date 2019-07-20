@@ -16,6 +16,7 @@ const withAuthorization = condition => Component => {
         this.listener = this.props.firebase.onAuthUserListener(
           authUser => {
             if (!condition(authUser)) {
+              console.log("routes:", ROUTES.SIGN_IN)
               navigate(ROUTES.SIGN_IN);
             }
           },
