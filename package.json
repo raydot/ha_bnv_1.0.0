@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "ember-cli-sliding-menu": "^1.0.1",
     "firebase": "^6.0.2",
     "firebaseui": "^4.1.0",
     "gatsby": "^2.4.3",
     "gatsby-plugin-favicon": "^3.1.6",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "readme-md-generator": "^0.6.0",
