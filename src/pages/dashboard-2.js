@@ -6,7 +6,7 @@ import digitalCard from '../img/wine-explorer-digital-card.png';
 
 
 
-const SignInPage = () => (
+const Dashboard2 = () => (
   <Fragment>
 	  	<Helmet>
         	<title>Dashboard | Beyond Napa Valley</title>
@@ -73,6 +73,6 @@ const SignInPage = () => (
 
 export default () => (
   <Layout>
-    <SignInPage />
+    <Dashboard2 />
   </Layout>
 );

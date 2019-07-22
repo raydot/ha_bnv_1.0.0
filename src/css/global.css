@@ -80,7 +80,8 @@ nav {
 
 ul.header, .header, .navTop, .columns {
 	max-width: 1290px;
-	margin: 0 auto;
+  margin: 0 auto;
+  /* overflow: hidden; */
 }
 
 
@@ -1221,6 +1222,10 @@ input[type=checkbox]:not(old):checked + label > span:before {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+}
+
+.btn-margin-top {
   margin-top: 55px;
 }
 

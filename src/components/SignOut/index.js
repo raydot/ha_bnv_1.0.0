@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import { withFirebase } from '../Firebase';
 
 const SignOutButton = ({ firebase }) => (
-  <button
-    type="button"
+  <Link
+    
     onClick={firebase ? firebase.doSignOut : () => {}}
   >
     Sign Out
-  </button>
+  </Link>
 );
 
 export default withFirebase(SignOutButton);

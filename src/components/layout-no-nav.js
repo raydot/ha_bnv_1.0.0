@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Helmet } from "react-helmet";
+
 import Navigation from './Navigation';
 import Footer from './Footer';
 import getFirebase, { FirebaseContext } from './Firebase';
@@ -35,15 +35,6 @@ class Layout extends Component {
 
 const AppWithAuthentication = withAuthentication(({ children }) => (
   <Fragment>
-    <Helmet>
-      <script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
-      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
-      <script src="https://www.gstatic.com/firebasejs/ui/4.1.0/firebase-ui-auth__en.js"></script>
-      <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.1.0/firebase-ui-auth.css" />
-      <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
-      <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
-    </Helmet>
-    <Navigation />
     {children}
     <Footer />
   </Fragment>

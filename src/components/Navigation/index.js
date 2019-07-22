@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import { AuthUserContext } from '../Session';
 import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
@@ -32,7 +31,8 @@ const NavigationAuth = ({ authUser }) => (
 				<ul className='header'>
 					<li><Link to='/explore'>Explore</Link></li>
 					<li><Link to='/membership'>Membership Benefits</Link></li>
-					<li><Link to='/join'>Join</Link></li>
+					<li><Link to='/pricing'>Pricing</Link></li>
+					<li><Link to={ROUTES.HOME}>Dashboard</Link></li>
 					<li><Link to={ROUTES.ACCOUNT}>Account</Link></li>
 						{!!authUser.roles[ROLES.ADMIN] && (
 							<li>
@@ -60,9 +60,10 @@ const NavigationNonAuth = () => (
 				<ul className='header'>
 					<li><Link to='/explore'>Explore</Link></li>
 					<li><Link to='/membership'>Membership Benefits</Link></li>
-					<li><Link to='/join'>Join</Link></li>
+					<li><Link to='/pricing'>Pricing</Link></li>
 
-					<li><Link to={ROUTES.SIGN_IN}>Sign In</Link></li>
+					<li><Link to={ROUTES.SIGN_IN}>Login</Link></li>
+					<li><Link to={ROUTES.SIGN_UP}><strong>Sign Up</strong></Link></li>
 				</ul>
 			</div>
 		</div>

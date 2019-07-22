@@ -1,7 +1,8 @@
 export const LANDING = '/';
 export const SIGN_UP = '/signup';
 export const SIGN_IN = '/signin/';
-export const HOME = '/go-check-email';
+export const CHECK_EMAIL = '/go-check-email';
+export const HOME = '/dashboard-2';
 export const ACCOUNT = '/account';
 export const PASSWORD_FORGET = '/pw-forget';
 export const ADMIN = '/admin';

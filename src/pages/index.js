@@ -17,7 +17,8 @@ const LandingPage = () => (
   <Fragment>
 	   	<Helmet>
         	<title>Beyond Napa Valley</title>
-			
+			<script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
+			<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
       	</Helmet>
       
 	  <div className="bigImageHeader">

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Helmet } from "react-helmet";
-import Layout from '../components/layout';
+import Layout from '../components/layout-no-nav';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
 
@@ -14,7 +14,7 @@ const GoCheckEmail = () => (
       	</Helmet>
 		<div className="smallHeader">
 			<div className="titleInfo">
-				<h1 className="pageTitle">Hold Up. Go Check Your Email</h1>
+				<h1 className="pageTitle">Awesome! Now go Check Your Email</h1>
 			</div>
 			<div className="hero-overlay"></div>
 			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
@@ -29,7 +29,7 @@ const GoCheckEmail = () => (
 		          <div className="grid-container">
 			          	<div className="grid-100">
 		            		<p className="center">
-			            		<strong>You need to go check your email to authenaticate that you are a real person. </strong>
+			            		<strong>We need to ensure you're a real person. Strange but true. We'll be right here when you get back.  </strong>
 		            		</p>
 		            	</div>
 		            </div>

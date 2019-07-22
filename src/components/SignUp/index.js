@@ -53,7 +53,7 @@ class SignUpFormBase extends Component {
       })
       .then(() => {
         this.setState({ ...INITIAL_STATE });
-        navigate(ROUTES.HOME);
+        navigate(ROUTES.CHECK_EMAIL);
       })
       .catch(error => {
         if (error.code === ERROR_CODE_ACCOUNT_EXISTS) {
