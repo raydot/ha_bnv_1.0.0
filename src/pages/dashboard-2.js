@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
+import StripeCheckout from 'react-stripe-checkout';
 
 
 
@@ -49,6 +50,7 @@ const Dashboard2 = () => (
 		            		<p>or</p>
 		            		<p>Your membership runs from July 1 2019 to July 4 2019</p>
 		            		<p>or</p>
+							
 		            		<p>Your currently on the free membership plan. Upgrade to start utilizing the discounts full membership has to offer.</p>
 		            	</div>
 		            </div>
@@ -76,3 +78,7 @@ export default () => (
     <Dashboard2 />
   </Layout>
 );
+
+
+
+

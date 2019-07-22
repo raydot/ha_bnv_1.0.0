@@ -42,6 +42,7 @@ const AppWithAuthentication = withAuthentication(({ children }) => (
       <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.1.0/firebase-ui-auth.css" />
       <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
       <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
+      <script src="https://js.stripe.com/v3"></script>
     </Helmet>
     <Navigation />
     {children}
