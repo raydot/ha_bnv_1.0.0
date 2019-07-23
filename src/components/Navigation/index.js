@@ -62,7 +62,7 @@ const NavigationNonAuth = () => (
 					<li><Link to='/pricing'>Pricing</Link></li>
 
 					<li><Link to={ROUTES.SIGN_IN}>Login</Link></li>
-					<li><Link to={ROUTES.SIGN_UP}><strong>Sign Up</strong></Link></li>
+					<li><Link to={ROUTES.SIGN_UP} className="navHighLight"><strong>Sign Up</strong></Link></li>
 				</ul>
 			</div>
 		</div>
