@@ -33,7 +33,6 @@ const NavigationAuth = ({ authUser }) => (
 					<li><Link to='/membership'>Membership Benefits</Link></li>
 					<li><Link to='/pricing'>Pricing</Link></li>
 					<li><Link to={ROUTES.HOME}>Dashboard</Link></li>
-					<li><Link to={ROUTES.ACCOUNT}>Account</Link></li>
 						{!!authUser.roles[ROLES.ADMIN] && (
 							<li>
 								<Link to={ROUTES.ADMIN}>Admin</Link>
