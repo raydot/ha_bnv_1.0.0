@@ -29,6 +29,7 @@ const NavigationAuth = ({ authUser }) => (
 			
 			<div className='rightCol'>
 				<ul className='header'>
+					<li>{ authUser.email } </li>
 					<li><Link to='/explore'>Explore</Link></li>
 					<li><Link to='/membership'>Membership Benefits</Link></li>
 					<li><Link to='/pricing'>Pricing</Link></li>

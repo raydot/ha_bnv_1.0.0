@@ -126,6 +126,7 @@ class SignInGoogleBase extends Component {
   }
 }
 
+//NOT USED
 class SignInFacebookBase extends Component {
   constructor(props) {
     super(props);
@@ -172,6 +173,7 @@ class SignInFacebookBase extends Component {
   }
 }
 
+//NOT USED
 class SignInTwitterBase extends Component {
   constructor(props) {
     super(props);
@@ -222,10 +224,11 @@ const SignInForm = withFirebase(SignInFormBase);
 
 const SignInGoogle = withFirebase(SignInGoogleBase);
 
-const SignInFacebook = withFirebase(SignInFacebookBase);
+//const SignInFacebook = withFirebase(SignInFacebookBase);
 
-const SignInTwitter = withFirebase(SignInTwitterBase);
+//const SignInTwitter = withFirebase(SignInTwitterBase);
 
 export default SignInForm;
 
-export { SignInGoogle, SignInFacebook, SignInTwitter };
+//export { SignInGoogle, SignInFacebook, SignInTwitter };
+export { SignInGoogle }

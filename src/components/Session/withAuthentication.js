@@ -12,6 +12,9 @@ const withAuthentication = Component => {
 
       this.state = {
         authUser: null,
+        // Should likely be refactored to handle JSX
+        //authUser: JSON.parse(localStorage.getItem('authUser'))
+        //alert(authUser)
       };
     }
 
@@ -41,6 +44,7 @@ const withAuthentication = Component => {
       });
 
       this.firebaseInit();
+      //alert(this.authUser)
     }
 
     componentDidUpdate() {

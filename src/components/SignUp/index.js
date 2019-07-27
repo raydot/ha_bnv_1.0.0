@@ -87,19 +87,10 @@ class SignUpFormBase extends Component {
     const isInvalid =
       passwordOne !== passwordTwo ||
       passwordOne === '' ||
-      email === '' ||
-      username === '';
+      email === ''
 
     return (
       <form className="form-group" onSubmit={this.onSubmit}>
-      	<label>Username</label>
-        <input
-          name="username"
-          value={username}
-          onChange={this.onChange}
-          type="text"
-          className="form-input"
-        />
         <label>Email Address</label>
         <input
           name="email"
@@ -127,7 +118,7 @@ class SignUpFormBase extends Component {
         <button className="btn btn-primary btn-block" disabled={isInvalid} type="submit">
           Sign Up
         </button>
-        <p className="form-input">By clicking the "Sign Up" button you agree to all Beyond Napa Valley Terms and Conditions.</p>
+        <p className="form-input">By clicking the "Sign Up" button you agree to all Beyond Napa Valley <Link to="/">Terms and Conditions.</Link></p>
         {error && <p>dot: {error.message}</p>}
       </form>
     );

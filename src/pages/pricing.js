@@ -6,17 +6,19 @@ import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
 import * as ROUTES from '../constants/routes';
 import * as ROLES from '../constants/roles';
+import { AuthUserContext } from '../components/Session';
+//import { AuthUserContext } from '../Session';
+//const grabAuthUser
 
 
-
-const GoCheckEmail = () => (
+const Pricing = ( {authUser} ) => (
   <Fragment>
 	  	<Helmet>
         	<title>Pricing | Beyond Napa Valley</title>
       	</Helmet>
 		<div className="smallHeader">
 			<div className="titleInfo">
-				<h1 className="pageTitle">Pricing</h1>
+				<h1 className="pageTitle">Pricing {authUser.email}</h1>
 			</div>
 			<div className="hero-overlay"></div>
 			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
@@ -34,7 +36,7 @@ const GoCheckEmail = () => (
 					Free Membership
 				  </h3>
 				  <div className="plan-cost"><span className="plan-price">$0</span></div>
-				  <div className="plan-select"><Link to={ROUTES.SIGN_UP}>Sign Up</Link></div>
+				  <div className="plan-select"><Link to={ROUTES.SIGN_UP}>EXPLORE</Link></div>
 				  <ul className="plan-features">
 					<li><i className="ion-checkmark"> </i>Read Exclusive Articles on BNV</li>
 					<li><i className="ion-checkmark"> </i>Check-in Ability in-app</li>
@@ -101,18 +103,12 @@ const GoCheckEmail = () => (
 			  
 			  <div className="clear"></div>
 							</div>
-		            
-		           
 		          </div>
-		              
-	  
-
-    
   </Fragment>
 );
 
 export default () => (
   <Layout>
-    <GoCheckEmail />
+    <Pricing />
   </Layout>
 );

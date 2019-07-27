@@ -21,9 +21,8 @@ import barrawinery from "../img/barra-winery.jpg"
 
 
 
-const SignInPage = () => (
+const Explore = () => (
   <Fragment>
-	  
   	   	<Helmet>
         	<title>Explore the Wine Regions | Beyond Napa Valley</title>
 			<meta name="description" content="Explore the wineries that the Wine Explorer has to offer" />
@@ -239,6 +238,6 @@ const SignInPage = () => (
 
 export default () => (
   <Layout>
-    <SignInPage />
+    <Explore />
   </Layout>
 );

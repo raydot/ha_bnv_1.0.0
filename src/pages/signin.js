@@ -31,8 +31,7 @@ const SignInPage = () => (
 	  	            	<div className="signup-content">
 		  					<SignInForm />
 		  					<SignInGoogle />
-		  					<SignInFacebook />
-		  					<SignInTwitter />
+		  					
 		  					<PasswordForgetLink />
 		  					<SignUpLink />
 	  					</div>

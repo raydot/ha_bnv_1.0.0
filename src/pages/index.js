@@ -45,8 +45,8 @@ const LandingPage = () => (
 	            	
 	            	<p></p>
 	            	<p className="biggerType">Have you ever looked at a wine map and wondered, “How much will this cost?” Or, “Will I like the wine there?” With over 400+ wineries in Sonoma County alone, it’s easy to get lost along the wine road. That’s where the Wine Explorer™ Membership comes in.</p>
-	            	<p>We’ve tasted at every winery that we’ve listed on our website. We can say without a doubt that all the wineries you can explore utilizing your wine explorer membership will be beyond memorable.</p>
-	            	<p>So go out and explore the wine country with the Wine Explorer Membership from Beyond Napa Valley</p>
+	            	<p>We’ve tasted at every winery that we list on our website. We can say without a doubt that all the wineries you can explore utilizing your Wine Explorer&#8482; membership will be beyond memorable.</p>
+	            	<p>So go out and explore the wine country with the Wine Explorer&#8482; membership from Beyond Napa Valley</p>
 	            	</Grid>
 	            	<Grid desktop="50">
 	            		<p><img src={ nallewinery } alt="Mustard Vines" className="imgFullCol" /></p>
