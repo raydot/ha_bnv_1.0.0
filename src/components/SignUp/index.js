@@ -76,11 +76,11 @@ class SignUpFormBase extends Component {
 
   render() {
     const {
-      username,
+      //username,
       email,
       passwordOne,
       passwordTwo,
-      isAdmin,
+      //isAdmin,
       error,
     } = this.state;
 

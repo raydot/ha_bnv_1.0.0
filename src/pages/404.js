@@ -25,7 +25,7 @@ const FourOhFour = () => (
 			</Grid>
 			<Grid desktop="50">
 				<div className="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Osa_kK7msSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe title="404_video" width="560" height="315" src="https://www.youtube.com/embed/Osa_kK7msSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</Grid>
 		</GridContainer>

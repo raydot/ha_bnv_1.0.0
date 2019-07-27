@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
-import exploreWineCounty from "../img/explore-wine-country.jpg"
+//import exploreWineCounty from "../img/explore-wine-country.jpg"
 import MercurySquare from "../img/mercury-square.jpg"
 import jRickards from "../img/jrickards.jpg"
 import ramazzotti from "../img/ramazzotti-wine.jpg"

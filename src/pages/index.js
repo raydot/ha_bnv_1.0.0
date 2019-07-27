@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import { Helmet } from "react-helmet";
 import { Grid, GridContainer} from "unsemantic"
-import foleyWinery from '../img/foley-winery.jpg';
+//import foleyWinery from '../img/foley-winery.jpg';
 import Layout from '../components/layout';
 import exploreWineCounty from "../img/explore-wine-country.jpg"
 import nallewinery from "../img/nalle-winery.jpg"

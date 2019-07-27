@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import {Helmet} from "react-helmet";
+//import {Helmet} from "react-helmet";
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 
 import SignInForm, {
   SignInGoogle,
-  SignInFacebook,
-  SignInTwitter,
+  //SignInFacebook,
+  //SignInTwitter,
 } from '../components/SignIn';
 import { SignUpLink } from '../components/SignUp';
 import { PasswordForgetLink } from '../components/PasswordForget';
@@ -23,7 +23,6 @@ const SignInPage = () => (
 		</div>
 	  
 	  <div className="content">
-		  
 		  <div className="mainContent">
   	          <div className="content synopsis">
   	            <div className="grid-container">
@@ -31,7 +30,6 @@ const SignInPage = () => (
 	  	            	<div className="signup-content">
 		  					<SignInForm />
 		  					<SignInGoogle />
-		  					
 		  					<PasswordForgetLink />
 		  					<SignUpLink />
 	  					</div>

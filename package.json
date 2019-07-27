@@ -12,7 +12,7 @@
     "ember-cli-sliding-menu": "^1.0.1",
     "firebase": "^6.0.2",
     "firebaseui": "^4.1.0",
-    "gatsby": "^2.4.3",
+    "gatsby": "^2.13.41",
     "gatsby-plugin-favicon": "^3.1.6",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
@@ -22,6 +22,7 @@
     "readme-md-generator": "^0.6.0",
     "recompose": "^0.30.0",
     "stripe": "^7.4.0",
+    "typescript": "^3.5.3",
     "unsemantic": "^1.2.3"
   }
 }

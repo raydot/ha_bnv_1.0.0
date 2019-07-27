@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
-import Navigation from './Navigation';
+//import Navigation from './Navigation';
 import Footer from './Footer';
 import getFirebase, { FirebaseContext } from './Firebase';
 import withAuthentication from './Session/withAuthentication';
-import CSS from "../css/global.css"
-import Grid from "../css/unsemantic-grid-responsive-tablet-no-ie7.css"
+//import CSS from "../css/global.css"
+//import Grid from "../css/unsemantic-grid-responsive-tablet-no-ie7.css"
 
 class Layout extends Component {
   state = {

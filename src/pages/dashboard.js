@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
 import { Helmet } from "react-helmet";
-import Layout from '../components/layout';
+//import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
 
 import { compose } from 'recompose'
-import { withAuthorization, withEmailVerification, withAuthentication } from '../components/Session'
+import { 	withAuthorization, 
+			//withEmailVerification, 
+			//withAuthentication 
+		} from '../components/Session'
 
 
 

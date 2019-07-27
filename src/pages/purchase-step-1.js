@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Helmet } from "react-helmet";
 import { Grid, GridContainer} from "unsemantic";
 import Layout from '../components/layout';
-import foleyWinery from '../img/foley-winery.jpg';
+//import foleyWinery from '../img/foley-winery.jpg';
 import MustardVines from '../img/mustard-vines.jpg';
 
 

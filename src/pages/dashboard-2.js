@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
-import StripeCheckout from 'react-stripe-checkout';
+//import StripeCheckout from 'react-stripe-checkout';
 
 
 

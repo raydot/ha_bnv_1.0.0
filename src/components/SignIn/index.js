@@ -127,7 +127,7 @@ class SignInGoogleBase extends Component {
 }
 
 //NOT USED
-class SignInFacebookBase extends Component {
+/*class SignInFacebookBase extends Component {
   constructor(props) {
     super(props);
 
@@ -171,10 +171,10 @@ class SignInFacebookBase extends Component {
       </form>
     );
   }
-}
+}*/
 
 //NOT USED
-class SignInTwitterBase extends Component {
+/*class SignInTwitterBase extends Component {
   constructor(props) {
     super(props);
 
@@ -218,7 +218,7 @@ class SignInTwitterBase extends Component {
       </form>
     );
   }
-}
+}*/
 
 const SignInForm = withFirebase(SignInFormBase);
 
