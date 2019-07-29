@@ -44,6 +44,7 @@ const AppWithAuthentication = withAuthentication(({ children }) => (
       <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
       <script src="https://js.stripe.com/v3"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      <script src="https://js.stripe.com/v3/"></script>
     </Helmet>
     <Navigation />
     {children}
