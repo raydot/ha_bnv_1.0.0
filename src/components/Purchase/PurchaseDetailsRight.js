@@ -95,13 +95,13 @@ class PurchaseDetailsRight extends Component {
 						</tr>
 					</tfoot>
 				</table>
-				<h3>Have a coupon?</h3>
+				{/*<h3>Have a coupon?</h3>
 					    <input
 					      className="form-input"
 						  type="text"
 					    />
-					    <button className="flat-button-small" type='submit'>Redeem Gift Code</button>
-				<h3>Pay Us!</h3>
+				<button className="flat-button-small" type='submit'>Redeem Gift Code</button>*/}
+				<h3>Make Payment</h3>
 				<button className="flat-button button-full-width" type='submit'>Purchase</button>
 			</div>				
     	)

@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 import MustardVines from '../img/mustard-vines.jpg'
 import foleyWinery from '../img/foley-winery.jpg'
  
-class Join extends Component {
+class Purchase extends Component {
 	// handleSubmit(event) {
 	// 	event.preventDefault()
 	// 	const data = new FormData(event.target)
@@ -20,11 +20,11 @@ class Join extends Component {
 	// }
 
 	constructor(props) {
-			super(props)
-			console.log('v?', this.props.location.state.viz)
-		}
+		super(props)
+		console.log('v?', this.props.location.state.viz)
+	}
 
-  render() {
+  	render() {
     return (
       <div>
 		  <div className="smallHeader">
@@ -38,19 +38,19 @@ class Join extends Component {
           
           
 	       
-	       	<div className="content">
+	    <div className="content">
 	          	
-	       <GridContainer>
-	       	<Grid desktop="100">
+	    <GridContainer>
+	    	<Grid desktop="100">
 	            <form>
 
 	            AEIOUY
 	            </form>		
-				  </Grid>
+			</Grid>
 				  
-				</GridContainer>
+		</GridContainer>
 				
-	          </div>
+
 			  <Grid>
 			  	<GridContainer>
 	       <p className="smallerType center">* Limited to a case at select wineries | ** Coming 2019 / 2020 | All purchases are non-refundable | Please drink responsibly</p>
@@ -62,4 +62,4 @@ class Join extends Component {
   }
 }
  
-export default Join
+export default Purchase

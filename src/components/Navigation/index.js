@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { AuthUserContext } from '../Session';
 import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
+//import * as ROLES from '../../constants/roles';
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
@@ -34,12 +34,6 @@ const NavigationAuth = ({ authUser }) => (
 					<li><Link to='/membership'>Membership Benefits</Link></li>
 					<li><Link to='/pricing'>Pricing</Link></li>
 					<li><Link to={ROUTES.HOME}>Dashboard</Link></li>
-						{!!authUser.roles[ROLES.ADMIN] && (
-							<li>
-								<Link to={ROUTES.ADMIN}>Admin</Link>
-      						</li>
-					    )}
-					    
 					<li><SignOutButton /></li>
 				</ul>
 			</div>

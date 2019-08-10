@@ -3,11 +3,12 @@ import foleyWinery from '../img/foley-winery.jpg';
 import Layout from '../components/layout';
 import SignUpForm from '../components/SignUp';
 
-const SignUpPage = () => (
+const SignUpPage = ({location}) => (
   <Fragment>
 	  <div className="smallHeader">
 			<div className="titleInfo">
 				<h1 className="pageTitle">Sign Up to become a Wine Explorer Member</h1>
+				<h3>loc: {location}</h3>
 			</div>
 			<div className="hero-overlay"></div>
 			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />

@@ -11,12 +11,11 @@ import SignInForm, {
 import { SignUpLink } from '../components/SignUp';
 import { PasswordForgetLink } from '../components/PasswordForget';
 
-const SignInPage = () => (
-  <Fragment>
-	  
+const SignInPage = ({location}) => (
+  <Fragment>  
 		<div className="smallHeader">
 			<div className="titleInfo">
-				<h1 className="pageTitle">Sign In</h1>
+				<h1 className="pageTitle">Sign In {location}</h1>
 			</div>
 			<div className="hero-overlay"></div>
 			<img src={ foleyWinery } alt="Foley Winery" className="wineryImage" />
