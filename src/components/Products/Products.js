@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+//import React, { Component } from "react"
+import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import ProductsCard from './ProductsCard'
 // import { symlink } from "fs";
@@ -11,20 +12,21 @@ const containerStyles = {
     padding: '1rem 0 1rem 0',
 }
 
-class Products extends Component {
-    state = {
-        stripe: null,
-    }
+// class Products extends Component {
+//     state = {
+//         stripe: null,
+//     }
 
-    componentDidMount() {
-        const stripe = window.Stripe(process.env.STRIPE_SECRET_KEY)
-        this.setState({ stripe })
-        //console.log("this.state:", this.state)
-    }
+//     componentDidMount() {
+//         const stripe = window.Stripe(process.env.STRIPE_SECRET_KEY)
+//         this.setState({ stripe })
+//         //console.log("this.state:", this.state)
+//     }
 
-    render() {
-        //console.log("stripe:", this.state)
-        return (
+//     render() {
+//         //console.log("stripe:", this.state)
+//         return (
+    export default props => (
             <StaticQuery
                 query={graphql`
                     query ActiveProductsQuery {
@@ -46,13 +48,13 @@ class Products extends Component {
                 render={({ products }) => (
                     <div style={containerStyles}>
                         {products.edges.map(({ node: product }) => (
-                            <ProductsCard key={product.id} name={product.name} stripe={this.state.stripe} />
+                            <ProductsCard {...props} key={product.id} product={ product } />
                         ))}
                     </div>
                 )}
             />
         )
-    }
-}
+//    }
+//}
 
-export default Products
+//export default Products

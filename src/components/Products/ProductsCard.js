@@ -25,7 +25,7 @@ const buttonStyles = {
 }
 
 const formatPrice = (amount, currency) => {
-    let price = (amount /100).toFixed(2)
+    let price = amount
     let numberFormat = new Intl.NumberFormat(["en-US"], {
         style: "currency",
         currency: currency,
@@ -47,7 +47,7 @@ const ProductsCard = class extends React.Component {
         }
     }
     render() {
-        const product = this.props.products
+        const product = this.props.product
         console.log("PRODUCT:", product)
         return (
             <div style={cardStyles}>
