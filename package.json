@@ -21,6 +21,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^4.0.0",
     "readme-md-generator": "^0.6.0",
     "recompose": "^0.30.0",
     "stripe": "^7.4.0",
