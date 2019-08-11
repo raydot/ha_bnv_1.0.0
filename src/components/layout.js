@@ -4,9 +4,11 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import getFirebase, { FirebaseContext } from './Firebase';
 import withAuthentication from './Session/withAuthentication';
-// eslint-disable-next-line
 
+// eslint-disable-next-line
 import CSS from "../css/global.css"
+
+// eslint-disable-next-line
 import GridCSS from "../css/unsemantic-grid-responsive-tablet-no-ie7.css"
 
 class Layout extends Component {

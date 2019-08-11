@@ -7,7 +7,7 @@ import digitalCard from '../img/wine-explorer-digital-card.png';
 
 
 
-const Dashboard2 = () => (
+const Dashboard = () => (
   <Fragment>
 	  	<Helmet>
         	<title>Dashboard | Beyond Napa Valley</title>
@@ -75,7 +75,7 @@ const Dashboard2 = () => (
 
 export default () => (
   <Layout>
-    <Dashboard2 />
+    <Dashboard />
   </Layout>
 );
 

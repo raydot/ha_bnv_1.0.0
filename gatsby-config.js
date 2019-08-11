@@ -4,14 +4,15 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Beyond Napa Valley",
+    title: `Beyond Napa Valley`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-stripe`,
       options: {
         objects: ['Balance', 'BalanceTransaction', 'Product', 'ApplicationFee', 'Sku', 'Subscription'],
-        secretKey: 'why_was_I_born?',
+        secretKey: process.env.STRIPE_SECRET_KEY,
         downloadFiles: true,
       }
     }
