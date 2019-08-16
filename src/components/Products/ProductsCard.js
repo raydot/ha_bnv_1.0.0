@@ -35,17 +35,7 @@ const formatPrice = (amount, currency) => {
 }
 
 const ProductsCard = class extends React.Component {
-    async redirectToCheckout(event, product, quantity = 1) {
-        event.preventDefault()
-        const { error } = await this.props.stripe.redirectToCheckout({
-            items: [{ product, quantity }],
-            successUrl: `http://beyondnapavalley.com/dashboard/`,
-            cancelUrl: `http://beyondnapavalley/pricing/`,
-        })
-        if (error) {
-            console.warn("Error:", error)
-        }
-    }
+    
     render() {
         const product = this.props.product
         console.log("PRODUCT:", product)

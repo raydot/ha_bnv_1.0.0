@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-stripe',
     {
       resolve: `gatsby-source-stripe`,
       options: {
