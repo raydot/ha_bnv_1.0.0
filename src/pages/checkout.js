@@ -12,18 +12,8 @@ const Checkout = class extends React.Component {
     })
   }
 
-  // this was moved from the ProductsCard
-  async redirectToCheckout(event, product, quantity = 1) {
-    event.preventDefault()
-    const { error } = await this.stripe.redirectToCheckout({
-        items: [{ product, quantity }],
-        successUrl: `http://beyondnapavalley.com/dashboard/`,
-        cancelUrl: `http://beyondnapavalley/pricing/`,
-    })
-    if (error) {
-        console.warn("Error:", error)
-    }
-  }
+
+  
  
   render() {
     return (

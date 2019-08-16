@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const cardStyles = {
   display: "flex",
@@ -35,6 +35,25 @@ const formatPrice = (amount, currency) => {
 }
 
 const ProductsCard = class extends React.Component {
+
+    state = {
+        disabled: false,
+        buttonText: 'BUY ME!',
+        paymentMessage: '',
+    }
+
+    async redirectToCheckout(event, product, quantity = 1) {
+        console.log("MADE IT!")
+        event.preventDefault()
+        const { error } = await this.props.redirectToCheckout({
+            items: [{ product, quantity }],
+            successUrl: `http://beyondnapavalley.com/dashboard/`,
+            cancelUrl: `http://beyondnapavalley/pricing/`,
+        })
+        if (error) {
+            console.warn("Error:", error)
+        }
+      }
     
     render() {
         const product = this.props.product
