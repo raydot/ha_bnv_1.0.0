@@ -1,14 +1,9 @@
 import React, { Fragment } from 'react';
 import { Helmet } from "react-helmet";
-//import Layout from '../components/layout';
+import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
-
-import { compose } from 'recompose'
-import { 	withAuthorization, 
-			//withEmailVerification, 
-			//withAuthentication 
-		} from '../components/Session'
+//import StripeCheckout from 'react-stripe-checkout';
 
 
 
@@ -41,6 +36,9 @@ const Dashboard = () => (
 		          
 		            <div className="grid-container">
 			            <div className="grid-30">
+		            	
+		            		
+		            		
 		            		<img src={ digitalCard } alt="Digital Membership Card" className="imgFullCol" />
 		            		<p><strong>Show Digital Membership Card to Winery</strong></p>
 		            		<p>Only show image if yearly membership or if dates are current</p>
@@ -52,6 +50,7 @@ const Dashboard = () => (
 		            		<p>or</p>
 		            		<p>Your membership runs from July 1 2019 to July 4 2019</p>
 		            		<p>or</p>
+							
 		            		<p>Your currently on the free membership plan. Upgrade to start utilizing the discounts full membership has to offer.</p>
 		            	</div>
 		            </div>
@@ -74,19 +73,12 @@ const Dashboard = () => (
   </Fragment>
 );
 
+export default () => (
+  <Layout>
+    <Dashboard />
+  </Layout>
+);
 
-const condition = authUser => !!authUser;
 
-export default compose(
-	withAuthorization(condition)
-)(Dashboard)
 
-// export default compose (
-// 	withEmailVerification,
-// 	withAuthorization(condition),
-// )(Dashboard)
-// export default () => (
-//   <Layout>
-//     <SignInPage />
-//   </Layout>
-// );
+

@@ -26,7 +26,7 @@ class PurchaseDetailsLeft extends Component {
 	} // constructor
 
 	componentDidUpdate() {
-	  this.checkAuthentication();
+	  //this.checkAuthentication();
 	}
 
 	handleFirstNameChange(e) {
@@ -93,7 +93,7 @@ class PurchaseDetailsLeft extends Component {
 					      className="form-input"
 					      type="text"
 					    />
-			    </div>
+			    	</div>
 			    
 			    <div className="form-group">
 				    <h3>Billing Address</h3>
@@ -115,8 +115,8 @@ class PurchaseDetailsLeft extends Component {
 				  type="text"
 			    />
 			    <label>State:</label>
-			    <select name="state" id="state">
-				  <option value="" selected="selected">Select a State</option>
+			    <select name="state" id="state" defaultValue={"Select a State"}>
+				  <option value="Select a State" disabled>Select a State</option>
 				  <option value="AL">Alabama</option>
 				  <option value="AK">Alaska</option>
 				  <option value="AZ">Arizona</option>

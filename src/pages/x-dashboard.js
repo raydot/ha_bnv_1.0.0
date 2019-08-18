@@ -1,13 +1,18 @@
 import React, { Fragment } from 'react';
 import { Helmet } from "react-helmet";
-import Layout from '../components/layout';
+//import Layout from '../components/layout';
 import foleyWinery from '../img/foley-winery.jpg';
 import digitalCard from '../img/wine-explorer-digital-card.png';
-//import StripeCheckout from 'react-stripe-checkout';
+
+import { compose } from 'recompose'
+import { 	withAuthorization, 
+			//withEmailVerification, 
+			//withAuthentication 
+		} from '../components/Session'
 
 
 
-const Dashboard2 = () => (
+const Dashboard = () => (
   <Fragment>
 	  	<Helmet>
         	<title>Dashboard | Beyond Napa Valley</title>
@@ -36,9 +41,6 @@ const Dashboard2 = () => (
 		          
 		            <div className="grid-container">
 			            <div className="grid-30">
-		            	
-		            		
-		            		
 		            		<img src={ digitalCard } alt="Digital Membership Card" className="imgFullCol" />
 		            		<p><strong>Show Digital Membership Card to Winery</strong></p>
 		            		<p>Only show image if yearly membership or if dates are current</p>
@@ -50,7 +52,6 @@ const Dashboard2 = () => (
 		            		<p>or</p>
 		            		<p>Your membership runs from July 1 2019 to July 4 2019</p>
 		            		<p>or</p>
-							
 		            		<p>Your currently on the free membership plan. Upgrade to start utilizing the discounts full membership has to offer.</p>
 		            	</div>
 		            </div>
@@ -73,12 +74,19 @@ const Dashboard2 = () => (
   </Fragment>
 );
 
-export default () => (
-  <Layout>
-    <Dashboard2 />
-  </Layout>
-);
 
+const condition = authUser => !!authUser;
 
+export default compose(
+	withAuthorization(condition)
+)(Dashboard)
 
-
+// export default compose (
+// 	withEmailVerification,
+// 	withAuthorization(condition),
+// )(Dashboard)
+// export default () => (
+//   <Layout>
+//     <SignInPage />
+//   </Layout>
+// );
